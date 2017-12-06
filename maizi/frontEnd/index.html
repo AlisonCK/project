@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        a:hover {
+            text-decoration: none;
+        }
+
+        .navbar-default {
+            background-color: #fff;
+            font-weight: bold;
+        }
+
+        .navbar-default .navbar-brand {
+            font-size: 30px;
+            color: #40d2b1;
+        }
+
+        .banner .cover h1 {
+            padding-bottom: 32px;
+            padding-top: 94px;
+            color: #fefefe;
+            font-weight: bold;
+        }
+
+        .banner .cover p {
+            color: #fefefe;
+            font-weight: bold;
+        }
+
+        .banner .cover img {
+            padding-top: 48px;
+            padding-bottom: 90px;
+        }
+
+        .banner {
+            margin-top: -20px;
+            outline: 1px solid #f0ad4e;
+            background: url("images/home-bg.jpg") no-repeat 0 0;
+            background-size: cover;
+        }
+
+        .banner .cover {
+            background: rgba(23, 54, 48, .8);
+        }
+
+        @media (max-width: 900px ) {
+            .banner .cover img {
+                width: 100%;
+            }
+        }
+
+        .develop {
+            padding-top: 98px;
+        }
+
+        .develop h4 {
+            font-weight: bold;
+        }
+
+        .develop p {
+            padding-bottom: 106px;
+        }
+
+        .ht5 {
+            padding-bottom: 80px;
+            padding-top: 84px;
+            background-color: #f8f8f8;
+        }
+
+        .ht5 h2 {
+            font-weight: bold;
+        }
+        @media (max-width: 1000px) {
+            .ht5 img{
+                width: 100%;
+            }
+        }
+
+        .bs {
+            padding-bottom: 80px;
+            padding-top: 84px;
+        }
+
+        .bs h2 {
+            font-weight: bold;
+        }
+        @media (max-width: 1000px) {
+            .bs img{
+                width: 100%;
+            }
+        }
+
+        .brand {
+            /*display: inline-block;*/
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #40d2b1;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .newClass {
+            background-color: #f8f8f8;
+            padding-bottom: 78px;
+        }
+
+        .lesson {
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .lesson img{
+            width: 100%;
+        }
+
+        .lesson .btn-default {
+            background: #fff;
+            border-radius: 0;
+            border-color: #40d2b1;
+            color: #40d2b1;
+            height: 36px;
+            width: 136px;
+            margin: 20px auto 30px;
+        }
+
+        @media (max-width: 480px) {
+            .newClass .col-xs-6 {
+                width: 100%;
+            }
+        }
+
+        .newClass h2 {
+            padding-bottom: 70px;
+            padding-top: 106px;
+            font-weight: bold;
+        }
+
+        .maizi {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .maizi h2 {
+            font-weight: bold;
+        }
+
+        .maizi .download {
+            height: 34px;
+            width: 148px;
+            background: #40d2b1;
+            border-radius: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+        @media (max-width: 1000px) {
+            .maizi img{
+                width: 100%;
+            }
+        }
+
+        .about {
+            background: url("images/contact-bg.png") no-repeat 0 0;
+            background-size: cover;
+        }
+
+        .about .message {
+            padding-bottom: 110px;
+            padding-top: 88px;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .about h2 {
+            font-weight: bold;
+        }
+
+        .about p {
+            padding-top: 30px;
+        }
+
+        .about .link {
+            color: #fefefe;
+        }
+
+        .about .submit {
+            height: 50px;
+            width: 340px;
+            background: #40d1b0;
+            border-radius: 0;
+            color: #fff;
+            font-weight: bold;
+            line-height: 40px;
+        }
+
+        .about input {
+            border-radius: 0;
+            height: 52px;
+        }
+
+        .about textarea {
+            border-radius: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 44px 0 35px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">麦子学院</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">前端开发</a></li>
+                <li><a href="#">最新课程</a></li>
+                <li><a href="#">移动APP</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--实战课程-->
+<div class="banner">
+    <div class="cover text-center">
+        <div class="wow bounceInUp animated" data-wow-duration="1s" data-wow-delay=".5s">
+            <h1>bootstrap实战课程等你来战！</h1>
+            <p>本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员</p>
+            <p> 培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端</p>
+            <img src="images/php.jpg">
+        </div>
+    </div>
+</div>
+<!--开发-->
+<div class="container">
+    <div class="develop row text-center wow slideInUp animated">
+        <div class="col-sm-4">
+            <img src="images/a.png" alt="">
+            <h4>Android开发</h4>
+            <p>Android开发技术交流、问题求助、实战案例分享</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/i.png" alt="">
+            <h4>iOS开发</h4>
+            <p>IOS开发技术交流、海量实战干货分享</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/b.png" alt="">
+            <h4>嵌入式底层开发</h4>
+            <p>底层嵌入式开发、实战案例等技术交流讨论</p>
+        </div>
+    </div>
+</div>
+<!--HTML5-->
+<div class="ht5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6  wow bounceInLeft animated" data-wow-duration="2s">
+                <h2>HTML5前端开发</h2>
+                <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+                <p><i class="brand glyphicon glyphicon-grain"></i>使用HTML5与css3技术轻松实现设备自适应展示</p>
+                <p><i class="brand glyphicon glyphicon-grain"></i>清晰明了的语义代码结构，更高的可读性，更利于页面维护的</p>
+            </div>
+            <div class="col-sm-6 wow bounceInRight animated" data-wow-duration="2s">
+                <img src="images/html5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--bootstrap-->
+<div class="bs container">
+    <div class="row wow slideInUp animated" data-wow-duration=".5s">
+        <div class="col-sm-6">
+            <img src="images/Bootstrap.jpg" alt="">
+        </div>
+        <div class="col-sm-6">
+            <h2>bootstrap实战视频教程</h2>
+            <p>Bootstrap是最受欢迎的HTML、CSS和JS框架，是用来开发响应式布局、移动设备优先的WEB项目。</p>
+            <p><i class="brand glyphicon glyphicon-grain"></i>你的网站和应用能在Bootstrap的帮助下通过同一份代码快速、有效适配手机、平板、PC设备。</p>
+            <p><i class="brand glyphicon glyphicon-grain"></i>Bootstrap提供了全面、美观的文档。你能在这里找到关于HTML元素，HTML和CSS组件、jQuery插件方面的所有详细文档。
+            </p>
+        </div>
+    </div>
+</div>
+<!--最新课程-->
+<div class="newClass">
+    <div class="container wow fadeIn animated" data-wow-duration="2s" data-wow-delay=".5s">
+        <h2 class="text-center">最新课程</h2>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="lesson text-center">
+                    <img src="images/swift.jpg" class="img-responsive" alt="">
+                    <a href="" class="btn btn-default">加入学习</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--麦子APP下载-->
+<div class="maizi">
+    <div class="container">
+        <div class="row wow slideInUp animated" data-wow-duration=".5s">
+            <div class="col-sm-6">
+                <h2>麦子学院全新APP下载</h2>
+                <p>全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！</p>
+                <a href="" class="btn btn-default download"><i class="glyphicon glyphicon-download-alt"></i>iPhone版</a>
+                <a href="" class="btn btn-default download"><i class="glyphicon glyphicon-download-alt"></i>Android版</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/app-banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--联系小麦-->
+<div class="about">
+    <div class="message">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 link wow bounceInLeft animated" data-wow-duration="2s">
+                    <h2><i class="glyphicon glyphicon-send"></i>&nbsp;&nbsp;&nbsp;联系小麦</h2>
+                    <p>
+                        麦子学院是成都麦子信息技术有限公司旗下一个IT在线教育平台，目前已有30万注册用户，10万以上APP下载量，5000小时视频内容。我们从不说空话，专注于IT在线教育，脱离传统教育的束缚，让你走哪学哪，想学就学。逗比的老师，贴心的助教，在这儿你能感受到来自五湖四海的伙伴们热情和踏实的学习态度！</p>
+                    <p><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;地址：成都市高新区天府软件园D5-11</p>
+                    <p><i class="glyphicon glyphicon-phone-alt"></i>&nbsp;&nbsp;联系电话：028-86567913</p>
+                    <p><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;邮箱：hr@maiziedu.com</p>
+                </div>
+                <div class="col-sm-6 wow bounceInRight animated" data-wow-duration="2s">
+                    <form action="">
+                        <div class="col-lg-6 form-group"><input type="text" class="form-control" placeholder="您的姓名">
+                        </div>
+                        <div class="col-lg-6 form-group"><input type="text" class="form-control" placeholder="您的邮箱">
+                        </div>
+                        <div class="col-lg-12 form-group"><input type="text" class="form-control" placeholder="标题">
+                        </div>
+                        <div class="col-lg-12 form-group">
+                            <textarea class="form-control form-group" rows="4" placeholder="留言内容"></textarea>
+                        </div>
+                        <div class="col-lg-12"><button href="" class="btn btn-default submit text-center">提交</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">Copyright&copy; 2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+    </div>
+</footer>
+<script src="js/wow.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
